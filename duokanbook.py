@@ -46,8 +46,8 @@ def checkprice(lis):
         bknm= bknameprice[0]
         bkpi= bknameprice[1]
         try:
-            if str(bkpi) < str(dict[bknm]):
-                print bknm+" Price："+dict[bknm]+" ---> "+bkpi
+            if float(bkpi) < float(dict[bknm]):
+                print '%s price %s-->%s'%(bknm,dict[bknm],bkpi)
             else:
                 continue
         except:
